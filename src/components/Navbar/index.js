@@ -13,7 +13,7 @@ import {
 } from "./NavbarElements";
 import Logo from "../../images/avatar.png";
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
@@ -21,7 +21,7 @@ const Navbar = () => {
                     <NavLogo to="/">
                         <img src={Logo} alt="logo" style={{ width: "80px" }} />
                     </NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
