@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import Logo from '../../images/logo.png'
 import {
     FooterContainer,
     FooterWrap,
@@ -7,6 +9,12 @@ import {
     FooterLinkItems,
     FooterLinkTitle,
     FooterLink,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    WebsiteRights,
+    SocialIcons,
+    SocialIconLink,
 } from "./FooterElements.js";
 
 const Footer = () => {
@@ -51,6 +59,33 @@ const Footer = () => {
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
+                <SocialMedia>
+                    <SocialMediaWrap>
+                        <SocialLogo to="/">
+                            <img src={Logo} alt="logo" style={{ width: "60px" }} />
+                        </SocialLogo>
+                        <WebsiteRights>
+                            Caia Chuang © {new Date().getFullYear()} All rights
+                            reserved.{" "}
+                        </WebsiteRights>
+                        <SocialIcons>
+                            <SocialIconLink
+                                href="//www.linkedin.com/in/caiachuang/"
+                                target="_blank"
+                                aria-label="Linkedin"
+                            >
+                                <FaLinkedin />
+                            </SocialIconLink>
+                            <SocialIconLink
+                                href="//github.com/CaiaCC"
+                                target="_blank"
+                                aria-label="Github"
+                            >
+                                <FaGithub/>
+                            </SocialIconLink>
+                        </SocialIcons>
+                    </SocialMediaWrap>
+                </SocialMedia>
             </FooterWrap>
         </FooterContainer>
     );
