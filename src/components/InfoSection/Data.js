@@ -1,16 +1,17 @@
 export const homeObjOne = {
-    id: 'about',
+    id: "about",
     lightBg: false,
     lightText: true,
     LightTextDesc: true,
     topLine: "Premium Bank",
-    headLine: 'Unlimited Transactions with zero fees',
-    description: 'Get access to out exclusive app that allows you to send unlimited transactions without getting charged any fees.',
+    headLine: "Unlimited Transactions with zero fees",
+    description:
+        "Get access to out exclusive app that allows you to send unlimited transactions without getting charged any fees.",
     buttonLabel: "Get started",
     imgStart: false,
-    img: require('../../images/svg-1.svg'),
-    alt: 'Car',
+    img: require("../../images/svg-1.svg").default,
+    alt: "Car",
     dark: true,
     primary: true,
     darkText: false,
-}
+};
