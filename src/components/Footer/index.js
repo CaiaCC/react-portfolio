@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from "react-scroll";
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Logo from '../../images/logo.png'
 import {
@@ -18,6 +19,10 @@ import {
 } from "./FooterElements.js";
 
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <FooterContainer>
             <FooterWrap>
@@ -61,7 +66,7 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to="/">
+                        <SocialLogo to="/" onClick={toggleHome}>
                             <img src={Logo} alt="logo" style={{ width: "60px" }} />
                         </SocialLogo>
                         <WebsiteRights>
