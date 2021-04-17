@@ -6,6 +6,7 @@ import {
     InfoRow,
     Column1,
     TextWrapper,
+    TopLine,
     Heading,
     Subtitle,
     BtnWrap,
@@ -15,20 +16,20 @@ import {
 } from "./InfoElements";
 
 const InfoSection = ({
-    lightBg,
     id,
-    imgStart,
-    topLine,
+    lightBg,
     lightText,
+    topLine,
     headLine,
-    darkText,
     description,
     buttonLabel,
+    imgStart,
     img,
     alt,
-    primary,
     dark,
-    dark2
+    dark2,
+    primary,
+    darkText,
 }) => {
     return (
         <>
@@ -36,7 +37,9 @@ const InfoSection = ({
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
-                            <TextWrapper>{topLine}</TextWrapper>
+                            <TextWrapper>
+                                <TopLine>{topLine}</TopLine>
+                            </TextWrapper>
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>
                                 {description}
