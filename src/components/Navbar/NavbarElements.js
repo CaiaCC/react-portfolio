@@ -30,15 +30,16 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
+
+    &:hover {
+        transform: scale(1.15);
+        transition: all 0.2s ease-in-out;
+    }
 `;
 
 export const MobileIcon = styled.div`
