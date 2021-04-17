@@ -19,7 +19,7 @@ const Navbar = ({toggle}) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">
-                        <img src={Logo} alt="logo" style={{ width: "80px" }} />
+                        <img src={Logo} alt="logo" style={{ width: "60px" }} />
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
