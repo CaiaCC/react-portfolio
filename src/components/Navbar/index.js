@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import{IconContext} from 'react-icons/lib';
 import {
     Nav,
     NavbarContainer,
@@ -30,33 +31,39 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
-            <Nav scrollNav={scrollNav}>
-                <NavbarContainer>
-                    <NavLogo to="/">
-                        <img src={Logo} alt="logo" style={{ width: "60px" }} />
-                    </NavLogo>
-                    <MobileIcon onClick={toggle}>
-                        <FaBars />
-                    </MobileIcon>
-                    <NavMenu>
-                        <NavItem>
-                            <NavLinks to="about">About</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="discover">Discover</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="projects">Projects</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="signup">Sign Up</NavLinks>
-                        </NavItem>
-                        <NavBtn>
-                            <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                        </NavBtn>
-                    </NavMenu>
-                </NavbarContainer>
-            </Nav>
+            <IconContext.Provider value={{ color: "#fff" }}>
+                <Nav scrollNav={scrollNav}>
+                    <NavbarContainer>
+                        <NavLogo to="/">
+                            <img
+                                src={Logo}
+                                alt="logo"
+                                style={{ width: "60px" }}
+                            />
+                        </NavLogo>
+                        <MobileIcon onClick={toggle}>
+                            <FaBars />
+                        </MobileIcon>
+                        <NavMenu>
+                            <NavItem>
+                                <NavLinks to="about">About</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="discover">Discover</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="projects">Projects</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to="signup">Sign Up</NavLinks>
+                            </NavItem>
+                            <NavBtn>
+                                <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                            </NavBtn>
+                        </NavMenu>
+                    </NavbarContainer>
+                </Nav>
+            </IconContext.Provider>
         </>
     );
 };
