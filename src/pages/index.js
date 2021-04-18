@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import {
     homeObjOne,
     homeObjTwo,
-    homeObjThree,
 } from "../components/InfoSection/Data";
 
 const Home = () => {
@@ -24,9 +23,8 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <InfoSection {...homeObjOne}/>
-            <InfoSection {...homeObjTwo}/>
             <Projects />
-            <InfoSection {...homeObjThree}/>
+            <InfoSection {...homeObjTwo}/>
             <Footer/>
         </>
     );

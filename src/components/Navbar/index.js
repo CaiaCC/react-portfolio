@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import Resume from '../../doc/Resume-CaiaChuang.pdf';
+
 import {
     Nav,
     NavbarContainer,
@@ -52,6 +54,18 @@ const Navbar = ({ toggle }) => {
                         <NavMenu>
                             <NavItem>
                                 <NavLinks
+                                    to="home"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                >
+                                    Home
+                                </NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks
                                     to="about"
                                     smooth={true}
                                     duration={500}
@@ -60,18 +74,6 @@ const Navbar = ({ toggle }) => {
                                     offset={-80}
                                 >
                                     About
-                                </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks
-                                    to="discover"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                >
-                                    Discover
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
@@ -88,18 +90,20 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="signup"
+                                    to="contact"
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     exact="true"
                                     offset={-80}
                                 >
-                                    Sign Up
+                                    Contact
                                 </NavLinks>
                             </NavItem>
                             <NavBtn>
-                                <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                                <NavBtnLink href={Resume} target="_blank">
+                                    Resume
+                                </NavBtnLink>
                             </NavBtn>
                         </NavMenu>
                     </NavbarContainer>
