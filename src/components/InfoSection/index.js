@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElement";
+import { FaCss3, FaHtml5, FaJs, FaNode, FaReact } from "react-icons/fa";
 import {
     InfoContainer,
     InfoWrapper,
@@ -7,12 +7,11 @@ import {
     Column1,
     TextWrapper,
     TopLine,
-    Heading,
-    Subtitle,
-    BtnWrap,
+    Paragraph,
     Column2,
     ImgWrap,
     Img,
+    StackIcons,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -20,9 +19,9 @@ const InfoSection = ({
     lightBg,
     lightText,
     topLine,
-    headLine,
-    description,
-    buttonLabel,
+    description1,
+    description2,
+    description3,
     imgStart,
     img,
     alt,
@@ -40,25 +39,22 @@ const InfoSection = ({
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                             </TextWrapper>
-                            <Heading lightText={lightText}>{headLine}</Heading>
-                            <Subtitle darkText={darkText}>
-                                {description}
-                            </Subtitle>
-                            <BtnWrap>
-                                <Button
-                                    to="home"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                >
-                                    {buttonLabel}
-                                </Button>
-                            </BtnWrap>
+                            <Paragraph darkText={darkText}>
+                                {description1}
+                            </Paragraph>
+                            <Paragraph darkText={darkText}>
+                                {description2}
+                            </Paragraph>
+                            <Paragraph darkText={darkText}>
+                                {description3}
+                            </Paragraph>
+                            <StackIcons>
+                                <FaHtml5 style={{ margin: "0 10px" }} />
+                                <FaCss3 style={{ margin: "0 10px" }} />
+                                <FaJs style={{ margin: "0 10px" }} />
+                                <FaReact style={{ margin: "0 10px" }} />
+                                <FaNode style={{ margin: "0 10px" }} />
+                            </StackIcons>
                         </Column1>
                         <Column2>
                             <ImgWrap>
