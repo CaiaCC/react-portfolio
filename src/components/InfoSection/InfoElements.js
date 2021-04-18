@@ -57,7 +57,7 @@ export const TopLine = styled.h2`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -102,4 +102,8 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 50px;
+
+    @media screen and (max-width: 768px) {
+        padding: 20px;
+    }
 `;
