@@ -79,7 +79,7 @@ export const Heading = styled.h1`
 export const Paragraph = styled.p`
     max-width: 440px;
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
     color: ${({ darkText }) => (darkText ? "#040005" : "#fff")};
 `;
