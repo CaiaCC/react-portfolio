@@ -4,7 +4,12 @@ import {
     ProjectsH2,
     ProjectsWrapper,
 } from "./ProjectsElements";
-import { projectObjOne } from "./ProjectsData";
+import {
+    projectObjOne,
+    projectObjTwo,
+    projectObjThree,
+    projectObjFour,
+} from "./ProjectsData";
 import ProjectCard from './ProjectCard';
 
 
@@ -15,6 +20,9 @@ const Projects = () => {
                 <ProjectsH2>Projects</ProjectsH2>
                 <ProjectsWrapper>
                     <ProjectCard projectObj={projectObjOne} />
+                    <ProjectCard projectObj={projectObjTwo} />
+                    <ProjectCard projectObj={projectObjThree} />
+                    <ProjectCard projectObj={projectObjFour} />
                 </ProjectsWrapper>
             </ProjectsContainer>
         </>
