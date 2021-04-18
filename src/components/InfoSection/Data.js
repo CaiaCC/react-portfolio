@@ -18,21 +18,3 @@ export const homeObjOne = {
     primary: true,
     darkText: false,
 };
-
-export const homeObjTwo = {
-    id: "contact",
-    lightBg: true,
-    lightText: false,
-    LightTextDesc: false,
-    topLine: "Premium Bank",
-    headLine: "Unlimited Transactions with zero fees",
-    description:
-        "Get access to out exclusive app that allows you to send unlimited transactions without getting charged any fees.",
-    buttonLabel: "Get started",
-    imgStart: true,
-    img: require("../../images/svg-2.svg").default,
-    alt: "Car",
-    dark: false,
-    primary: false,
-    darkText: true,
-};
