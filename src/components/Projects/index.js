@@ -1,42 +1,54 @@
 import React from 'react';
 import {
     ProjectsContainer,
-    ProjectsH1,
+    ProjectsH2,
     ProjectsWrapper,
     ProjectsCard,
-    ProjectsIcon,
-    ProjectsH2,
+    ProjectImg,
+    ProjectsH3,
     ProjectsP,
+    ProjectIcons,
+    ProjectIconLink,
+    Github,
+    ExternalLink,
 } from "./ProjectsElements";
-import Icon1 from "../../images/svg-1.svg";
-import Icon2 from "../../images/svg-2.svg";
-import Icon3 from "../../images/svg-3.svg";
+import { projectOne } from "./ProjectsData";
+
 
 const Projects = () => {
     return (
         <>
-            <ProjectsContainer id='projects'>
-                <ProjectsH1>Projects</ProjectsH1>
+            <ProjectsContainer id="projects">
+                <ProjectsH2>Projects</ProjectsH2>
                 <ProjectsWrapper>
                     <ProjectsCard>
-                        <ProjectsIcon src={Icon1}/>
-                        <ProjectsH2>Project1 Name</ProjectsH2>
-                        <ProjectsP>Short introduction for the project(intro & stack) might need to add a section for stack and buttons for links(hosted site and github repository)</ProjectsP>
-                    </ProjectsCard>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon2}/>
-                        <ProjectsH2>Project2 Name</ProjectsH2>
-                        <ProjectsP>Short introduction for the project(intro & stack) might need to add a section for stack and buttons for links(hosted site and github repository)</ProjectsP>
-                    </ProjectsCard>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon3}/>
-                        <ProjectsH2>Project3 Name</ProjectsH2>
-                        <ProjectsP>Short introduction for the project(intro & stack) might need to add a section for stack and buttons for links(hosted site and github repository)</ProjectsP>
+                        <ProjectImg
+                            src={projectOne.img}
+                            alt={projectOne.name}
+                        />
+                        <ProjectsH3>{projectOne.name}</ProjectsH3>
+                        <ProjectsP>{projectOne.description}</ProjectsP>
+                        <ProjectIcons>
+                            <ProjectIconLink
+                                href={projectOne.externalLink}
+                                target="_blank"
+                                aria-label={`${projectOne.name} external`}
+                            >
+                                <ExternalLink />
+                            </ProjectIconLink>
+                            <ProjectIconLink
+                                href={projectOne.githubLink}
+                                target="_blank"
+                                aria-label={`${projectOne.name} github`}
+                            >
+                                <Github />
+                            </ProjectIconLink>
+                        </ProjectIcons>
                     </ProjectsCard>
                 </ProjectsWrapper>
             </ProjectsContainer>
         </>
-    )
+    );
 }
 
 export default Projects
