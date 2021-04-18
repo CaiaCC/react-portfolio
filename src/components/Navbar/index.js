@@ -8,6 +8,7 @@ import {
     Nav,
     NavbarContainer,
     NavLogo,
+    Logo,
     MobileIcon,
     NavMenu,
     NavItem,
@@ -15,7 +16,7 @@ import {
     NavBtn,
     NavBtnLink,
 } from "./NavbarElements";
-import Logo from "../../images/logo.png";
+import CaiaLogo from "../../images/logo.png";
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, SetScrollNav] = useState(false);
@@ -42,10 +43,9 @@ const Navbar = ({ toggle }) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            <img
-                                src={Logo}
+                            <Logo
+                                src={CaiaLogo}
                                 alt="logo"
-                                style={{ width: "60px" }}
                             />
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
