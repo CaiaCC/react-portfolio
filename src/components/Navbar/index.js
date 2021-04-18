@@ -100,12 +100,12 @@ const Navbar = ({ toggle }) => {
                                     Contact
                                 </NavLinks>
                             </NavItem>
+                        </NavMenu>
                             <NavBtn>
                                 <NavBtnLink href={Resume} target="_blank">
                                     Resume
                                 </NavBtnLink>
                             </NavBtn>
-                        </NavMenu>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>
