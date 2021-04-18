@@ -8,7 +8,8 @@ import {
     HeroP,
     HeroBtnWrapper,
     ArrowForward,
-    ArrowRight
+    ArrowRight,
+    Logo
 } from "./HeroElements";
 import {Button} from '../ButtonElement';
 import Video from '../../videos/video.mp4'
@@ -34,10 +35,10 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>Caia Chuang</HeroH1>
-                <HeroP>Full Stack Web Developer.</HeroP>
+                <HeroP>Hi, I am a Full Stack Web Developer</HeroP>
                 <HeroBtnWrapper>
                     <Button
-                        to="signup"
+                        to="contact"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
@@ -48,7 +49,7 @@ const HeroSection = () => {
                         exact="true"
                         offset={-80}
                     >
-                        Get Started
+                        Contact Me
                         {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>

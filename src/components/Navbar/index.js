@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import Resume from '../../doc/Resume-CaiaChuang.pdf';
+
 import {
     Nav,
     NavbarContainer,
     NavLogo,
+    Logo,
     MobileIcon,
     NavMenu,
     NavItem,
@@ -13,7 +16,7 @@ import {
     NavBtn,
     NavBtnLink,
 } from "./NavbarElements";
-import Logo from "../../images/logo.png";
+import CaiaLogo from "../../images/logo.png";
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, SetScrollNav] = useState(false);
@@ -40,16 +43,27 @@ const Navbar = ({ toggle }) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            <img
-                                src={Logo}
+                            <Logo
+                                src={CaiaLogo}
                                 alt="logo"
-                                style={{ width: "60px" }}
                             />
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
                         </MobileIcon>
                         <NavMenu>
+                            <NavItem>
+                                <NavLinks
+                                    to="home"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                >
+                                    Home
+                                </NavLinks>
+                            </NavItem>
                             <NavItem>
                                 <NavLinks
                                     to="about"
@@ -60,18 +74,6 @@ const Navbar = ({ toggle }) => {
                                     offset={-80}
                                 >
                                     About
-                                </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks
-                                    to="discover"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                >
-                                    Discover
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
@@ -88,18 +90,20 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="signup"
+                                    to="contact"
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     exact="true"
                                     offset={-80}
                                 >
-                                    Sign Up
+                                    Contact
                                 </NavLinks>
                             </NavItem>
                             <NavBtn>
-                                <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                                <NavBtnLink href={Resume} target="_blank">
+                                    Resume
+                                </NavBtnLink>
                             </NavBtn>
                         </NavMenu>
                     </NavbarContainer>

@@ -1,42 +1,32 @@
 import React from 'react';
 import {
     ProjectsContainer,
-    ProjectsH1,
-    ProjectsWrapper,
-    ProjectsCard,
-    ProjectsIcon,
     ProjectsH2,
-    ProjectsP,
+    ProjectsWrapper,
 } from "./ProjectsElements";
-import Icon1 from "../../images/svg-1.svg";
-import Icon2 from "../../images/svg-2.svg";
-import Icon3 from "../../images/svg-3.svg";
+import {
+    projectObjOne,
+    projectObjTwo,
+    projectObjThree,
+    projectObjFour,
+} from "./ProjectsData";
+import ProjectCard from './ProjectCard';
+
 
 const Projects = () => {
     return (
         <>
-            <ProjectsContainer id='projects'>
-                <ProjectsH1>Projects</ProjectsH1>
+            <ProjectsContainer id="projects">
+                <ProjectsH2>Projects</ProjectsH2>
                 <ProjectsWrapper>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon1}/>
-                        <ProjectsH2>Project1 Name</ProjectsH2>
-                        <ProjectsP>Short introduction for the project(intro & stack) might need to add a section for stack and buttons for links(hosted site and github repository)</ProjectsP>
-                    </ProjectsCard>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon2}/>
-                        <ProjectsH2>Project2 Name</ProjectsH2>
-                        <ProjectsP>Short introduction for the project(intro & stack) might need to add a section for stack and buttons for links(hosted site and github repository)</ProjectsP>
-                    </ProjectsCard>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon3}/>
-                        <ProjectsH2>Project3 Name</ProjectsH2>
-                        <ProjectsP>Short introduction for the project(intro & stack) might need to add a section for stack and buttons for links(hosted site and github repository)</ProjectsP>
-                    </ProjectsCard>
+                    <ProjectCard projectObj={projectObjOne} />
+                    <ProjectCard projectObj={projectObjTwo} />
+                    <ProjectCard projectObj={projectObjThree} />
+                    <ProjectCard projectObj={projectObjFour} />
                 </ProjectsWrapper>
             </ProjectsContainer>
         </>
-    )
+    );
 }
 
 export default Projects

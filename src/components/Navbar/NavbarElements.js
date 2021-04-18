@@ -34,7 +34,10 @@ export const NavLogo = styled(LinkR)`
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+`;
+
+export const Logo = styled.img`
+    width: 60px;
 
     &:hover {
         transform: scale(1.15);
@@ -95,7 +98,7 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.a`
     border-radius: 50px;
     background: #ef476f;
     white-space: nowrap;
@@ -114,3 +117,4 @@ export const NavBtnLink = styled(LinkR)`
         color: #040005;
     }
 `;
+
