@@ -4,10 +4,10 @@ import Navbar from '../components/Navbar'
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import {
     homeObjOne,
-    homeObjTwo,
 } from "../components/InfoSection/Data";
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
             <HeroSection />
             <InfoSection {...homeObjOne}/>
             <Projects />
-            <InfoSection {...homeObjTwo}/>
+            <Contact />
             <Footer/>
         </>
     );
