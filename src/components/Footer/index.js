@@ -1,22 +1,18 @@
 import React from 'react';
 import { animateScroll as scroll } from "react-scroll";
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import Logo from '../../images/logo.png'
 import {
+    Logo,
     FooterContainer,
     FooterWrap,
-    FooterLinksContainer,
-    FooterLinksWrapper,
-    FooterLinkItems,
-    FooterLinkTitle,
-    FooterLink,
     SocialMedia,
     SocialMediaWrap,
-    SocialLogo,
+    FooterLogo,
     WebsiteRights,
     SocialIcons,
     SocialIconLink,
 } from "./FooterElements.js";
+import CaiaLogo from "../../images/logo.png";
 
 const Footer = () => {
     const toggleHome = () => {
@@ -26,49 +22,11 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <FooterLinksContainer>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                            <FooterLink to="/signin">About us</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to="/" onClick={toggleHome}>
-                            <img src={Logo} alt="logo" style={{ width: "60px" }} />
-                        </SocialLogo>
+                        <FooterLogo to="/" onClick={toggleHome}>
+                            <Logo src={CaiaLogo} alt="logo" />
+                        </FooterLogo>
                         <WebsiteRights>
                             Caia Chuang © {new Date().getFullYear()} All rights
                             reserved.{" "}
@@ -86,7 +44,7 @@ const Footer = () => {
                                 target="_blank"
                                 aria-label="Github"
                             >
-                                <FaGithub/>
+                                <FaGithub />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>
