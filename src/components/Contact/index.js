@@ -15,8 +15,8 @@ const Contact = () => {
         <>
             <ContactContainer id="contact">
                 <ContactWrapper>
-                    <ContactH2>Let's Connect</ContactH2>
-                    <ContactP>You can connect with me here</ContactP>
+                    <ContactH2>Get In Touch</ContactH2>
+                    {/* <ContactP>You can connect with me here</ContactP> */}
                     <ContactIcons>
                         <ContactIconLink
                             href="//www.linkedin.com/in/caiachuang/"

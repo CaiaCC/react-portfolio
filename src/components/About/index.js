@@ -12,12 +12,11 @@ import {
     ImgWrap,
     Img,
     StackIcons,
-} from "./InfoElements";
+} from "./AboutElements";
 
-const InfoSection = ({
+const About = ({
     id,
     lightBg,
-    lightText,
     topLine,
     description1,
     description2,
@@ -25,9 +24,6 @@ const InfoSection = ({
     imgStart,
     img,
     alt,
-    dark,
-    dark2,
-    primary,
     darkText,
 }) => {
     return (
@@ -68,4 +64,4 @@ const InfoSection = ({
     );
 };
 
-export default InfoSection;
+export default About;

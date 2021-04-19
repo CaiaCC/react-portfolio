@@ -1,23 +1,22 @@
-import React from 'react';
+import React from "react";
 import {
     ProjectsContainer,
-    ProjectsH2,
+    ProjectsH1,
     ProjectsWrapper,
 } from "./ProjectsElements";
+import ProjectCard from "./ProjectCard";
 import {
     projectObjOne,
     projectObjTwo,
     projectObjThree,
     projectObjFour,
 } from "./ProjectsData";
-import ProjectCard from './ProjectCard';
-
 
 const Projects = () => {
     return (
         <>
             <ProjectsContainer id="projects">
-                <ProjectsH2>Projects</ProjectsH2>
+                <ProjectsH1>Projects</ProjectsH1>
                 <ProjectsWrapper>
                     <ProjectCard projectObj={projectObjOne} />
                     <ProjectCard projectObj={projectObjTwo} />
@@ -27,6 +26,6 @@ const Projects = () => {
             </ProjectsContainer>
         </>
     );
-}
+};
 
-export default Projects
+export default Projects;
