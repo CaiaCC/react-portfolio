@@ -4,9 +4,9 @@ export const ContactContainer = styled.div`
     color: #fff;
     background: #040005;
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         padding: 100px 0;
-    }
+    } */
 `;
 
 export const ContactWrapper = styled.div`
