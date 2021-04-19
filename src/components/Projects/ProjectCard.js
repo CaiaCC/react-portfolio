@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 import {
     ProjectsCard,
-    ProjectImg,
-    ProjectCardWrap,
-    ProjectContent,
-    ProjectsH3,
+    ProjectsImg,
+    ProjectsH2,
     ProjectsP,
     ProjectIcons,
     ProjectIconLink,
@@ -12,42 +10,38 @@ import {
     ExternalLink,
 } from "./ProjectsElements";
 
-const ProjectCard = ({projectObj}) => {
-    const { img, name, description, externalLink, githubLink } = projectObj;
+const ProjectCard = ({ projectObj }) => {
+    const { img, name, p, externalL, githubL } = projectObj;
 
     return (
         <>
             <ProjectsCard>
-                <ProjectCardWrap>
-                    <ProjectImg src={img} alt={name} />
-                    <ProjectContent>
-                        <ProjectsH3>{name}</ProjectsH3>
-                        <ProjectsP>{description}</ProjectsP>
-                        <ProjectIcons>
-                            {externalLink && (
-                                <ProjectIconLink
-                                    href={externalLink}
-                                    target="_blank"
-                                    aria-label={`${name} external link.`}
-                                >
-                                    <ExternalLink />
-                                </ProjectIconLink>
-                            )}
-                            {githubLink && (
-                                <ProjectIconLink
-                                    href={githubLink}
-                                    target="_blank"
-                                    aria-label={`${name} github link.`}
-                                >
-                                    <Github />
-                                </ProjectIconLink>
-                            )}
-                        </ProjectIcons>
-                    </ProjectContent>
-                </ProjectCardWrap>
+                <ProjectsImg src={img} alt={name} />
+                <ProjectsH2>{name}</ProjectsH2>
+                <ProjectsP>{p}</ProjectsP>
+                <ProjectIcons>
+                    {externalL && (
+                        <ProjectIconLink
+                            href={externalL}
+                            target="_blank"
+                            aria-label={`${name} Demo`}
+                        >
+                            <ExternalLink />
+                        </ProjectIconLink>
+                    )}
+                    {githubL && (
+                        <ProjectIconLink
+                            href={githubL}
+                            target="_blank"
+                            aria-label={`${name} Github`}
+                        >
+                            <Github />
+                        </ProjectIconLink>
+                    )}
+                </ProjectIcons>
             </ProjectsCard>
         </>
     );
-}
+};
 
 export default ProjectCard;
