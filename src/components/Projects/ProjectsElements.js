@@ -42,7 +42,7 @@ export const ProjectsCard = styled.div`
     align-items: center;
     border-radius: 10px;
     max-height: 340px;
-    padding: 30px;
+    padding: 10px 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
     &:hover {
@@ -91,7 +91,8 @@ export const ProjectIcons = styled.div`
 export const ProjectIconLink = styled.a`
     color: #fff;
     font-size: 30px;
-    margin: 10px 15px;
+    margin: 10px 15px 0 15px;
+    padding: 10px 0;
 `;
 
 export const Github = styled(FaGithub)`
