@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
-import Resume from '../../doc/Resume-CaiaChuang.pdf';
 
 import {
     Nav,
@@ -43,10 +42,7 @@ const Navbar = ({ toggle }) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            <Logo
-                                src={CaiaLogo}
-                                alt="logo"
-                            />
+                            <Logo src={CaiaLogo} alt="logo" />
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
@@ -101,11 +97,14 @@ const Navbar = ({ toggle }) => {
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>
-                            <NavBtn>
-                                <NavBtnLink href={Resume} target="_blank">
-                                    Resume
-                                </NavBtnLink>
-                            </NavBtn>
+                        <NavBtn>
+                            <NavBtnLink
+                                href="/resume-CaiaChuang.pdf"
+                                target="_blank"
+                            >
+                                Resume
+                            </NavBtnLink>
+                        </NavBtn>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>

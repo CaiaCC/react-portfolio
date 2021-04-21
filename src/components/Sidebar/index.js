@@ -1,6 +1,5 @@
 import React from "react";
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from "./SidebarElements";
-import Resume from "../../doc/Resume-CaiaChuang.pdf";
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
@@ -24,7 +23,12 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute href={Resume} target="_blank">Resume</SidebarRoute>
+                    <SidebarRoute
+                        href='href="/resume-CaiaChuang.pdf"'
+                        target="_blank"
+                    >
+                        Resume
+                    </SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
