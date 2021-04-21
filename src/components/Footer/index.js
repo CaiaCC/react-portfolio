@@ -28,10 +28,10 @@ const Footer = () => {
                         <FooterLogo to="/" onClick={toggleHome}>
                             <Logo src={CaiaLogo} alt="logo" />
                         </FooterLogo>
-                        <WebsiteRights>
+                        {/* <WebsiteRights>
                             Caia Chuang © {new Date().getFullYear()} All rights
                             reserved.{" "}
-                        </WebsiteRights>
+                        </WebsiteRights> */}
                         <SocialIcons>
                             <SocialIconLink
                                 href="//www.linkedin.com/in/caiachuang/"
