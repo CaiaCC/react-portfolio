@@ -28,10 +28,9 @@ const Footer = () => {
                         <FooterLogo to="/" onClick={toggleHome}>
                             <Logo src={CaiaLogo} alt="logo" />
                         </FooterLogo>
-                        {/* <WebsiteRights>
-                            Caia Chuang © {new Date().getFullYear()} All rights
-                            reserved.{" "}
-                        </WebsiteRights> */}
+                        <WebsiteRights>
+                            This site is built by Caia Chuang. {/*new Date().getFullYear()*/}
+                        </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink
                                 href="//www.linkedin.com/in/caiachuang/"
