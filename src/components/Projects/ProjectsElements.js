@@ -38,10 +38,11 @@ export const ProjectsCard = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    height: 100%;
+    max-height: 350px;
     padding: 10px 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
@@ -55,7 +56,7 @@ export const ProjectsCard = styled.div`
 export const ProjectsImg = styled.img`
     height: 160px;
     width: 160px;
-    margin-bottom: 10px;
+    margin: 10px;
 `;
 
 export const ProjectsH1 = styled.h2`
@@ -75,7 +76,7 @@ export const ProjectsH1 = styled.h2`
 
 export const ProjectsH2 = styled.h2`
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin: 10px;
 `;
 
 export const ProjectsP = styled.p`
@@ -92,7 +93,6 @@ export const ProjectIconLink = styled.a`
     color: #fff;
     font-size: 30px;
     margin: 10px 15px 0 15px;
-    padding: 10px 0;
 `;
 
 export const Github = styled(FaGithub)`
