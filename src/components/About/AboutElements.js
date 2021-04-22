@@ -5,15 +5,14 @@ export const InfoContainer = styled.div`
     background: #040005;
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
-        height: auto;
+        padding: 10em 0 1em 0;
     }
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    min-height: 860px;
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
