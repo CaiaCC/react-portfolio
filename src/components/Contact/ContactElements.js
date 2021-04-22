@@ -4,9 +4,9 @@ export const ContactContainer = styled.div`
     color: #fff;
     background: #040005;
 
-    /* @media screen and (max-width: 768px) {
-        padding: 100px 0;
-    } */
+    @media screen and (max-width: 768px) {
+        padding: 1em 0;
+    }
 `;
 
 export const ContactWrapper = styled.div`
@@ -15,15 +15,14 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 1;
-    height: 860px;
-    width: 100%;
+    min-height: 860px;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 24px;
 `;
 
 export const ContactH2 = styled.h2`
     color: #ef476f;
+    text-align: center;
     font-size: 48px;
     line-height: 48px;
     font-weight: 700;
@@ -39,7 +38,6 @@ export const ContactH2 = styled.h2`
 export const ContactP = styled.p`
     text-align: center;
     max-width: 440px;
-    margin-bottom: 25px;
     font-size: 20px;
     line-height: 30px;
 `;
