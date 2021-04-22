@@ -47,8 +47,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
-    /* padding: 0 0 5px 0; */
+    max-width: 550px;
 `;
 
 export const TopLine = styled.h2`
@@ -59,18 +58,7 @@ export const TopLine = styled.h2`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 32px;
-
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
-`;
-
-export const Heading = styled.h1`
-    margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1.1;
-    font-weight: 600;
-    color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#040005")};
+    text-align: center;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -78,7 +66,7 @@ export const Heading = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    max-width: 440px;
+    max-width: 550px;
     margin-bottom: 25px;
     font-size: 20px;
     line-height: 30px;
@@ -87,14 +75,14 @@ export const Paragraph = styled.p`
 
 export const StackIcons = styled.div`
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     font-size: 2.5rem;
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
+    max-width: 550px;
     height: 100%;
 `;
 

@@ -34,23 +34,24 @@ const About = ({
                         <Column1>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
+
+                                <Paragraph darkText={darkText}>
+                                    {description1}
+                                </Paragraph>
+                                <Paragraph darkText={darkText}>
+                                    {description2}
+                                </Paragraph>
+                                <Paragraph darkText={darkText}>
+                                    {description3}
+                                </Paragraph>
+                                <StackIcons>
+                                    <FaHtml5 style={{ margin: "0 .3em" }} />
+                                    <FaCss3 style={{ margin: "0 .3em" }} />
+                                    <FaJs style={{ margin: "0 .3em" }} />
+                                    <FaReact style={{ margin: "0 .3em" }} />
+                                    <FaNode style={{ margin: "0 .3em" }} />
+                                </StackIcons>
                             </TextWrapper>
-                            <Paragraph darkText={darkText}>
-                                {description1}
-                            </Paragraph>
-                            <Paragraph darkText={darkText}>
-                                {description2}
-                            </Paragraph>
-                            <Paragraph darkText={darkText}>
-                                {description3}
-                            </Paragraph>
-                            <StackIcons>
-                                <FaHtml5 style={{ margin: "0 10px" }} />
-                                <FaCss3 style={{ margin: "0 10px" }} />
-                                <FaJs style={{ margin: "0 10px" }} />
-                                <FaReact style={{ margin: "0 10px" }} />
-                                <FaNode style={{ margin: "0 10px" }} />
-                            </StackIcons>
                         </Column1>
                         <Column2>
                             <ImgWrap>
