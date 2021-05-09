@@ -18,7 +18,7 @@ const ProjectCard = ({ projectObj }) => {
             <ProjectsCard>
                 <ProjectsImg src={img} alt={name} />
                 <ProjectsH2>{name}</ProjectsH2>
-                <ProjectsP>{p}</ProjectsP>
+                {/* <ProjectsP>{p}</ProjectsP> */}
                 <ProjectIcons>
                     {externalL && (
                         <ProjectIconLink

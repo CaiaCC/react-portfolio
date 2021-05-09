@@ -28,3 +28,10 @@ export const projectObjFour = {
     githubL: "//github.com/CaiaCC/jungle-rails",
     externalL: "",
 };
+export const projectObjFive = {
+    name: "Disney+ Clone",
+    p: "A mini e-commerce application.",
+    img: require("../../images/disney-plus-clone.png").default,
+    githubL: "//github.com/CaiaCC/disney-plus-clone",
+    externalL: "//disney-plus-clone-c00df.web.app",
+};

@@ -21,10 +21,11 @@ export const ProjectsWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
+
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
     }
@@ -42,10 +43,12 @@ export const ProjectsCard = styled.div`
     align-items: center;
     border-radius: 10px;
     height: 100%;
+    width: auto;
     max-height: 350px;
     padding: 10px 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
+
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
@@ -54,9 +57,14 @@ export const ProjectsCard = styled.div`
 `;
 
 export const ProjectsImg = styled.img`
-    height: 160px;
-    width: 160px;
+    height: 180px;
+    width: 350px;
     margin: 10px;
+
+    @media screen and (max-width: 768px) {
+        height: 150px;
+        width: 250px;
+    }
 `;
 
 export const ProjectsH1 = styled.h2`
