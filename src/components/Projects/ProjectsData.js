@@ -35,3 +35,10 @@ export const projectObjFive = {
     githubL: "//github.com/CaiaCC/disney-plus-clone",
     externalL: "//disney-plus-clone-c00df.web.app",
 };
+export const projectObjSix = {
+    name: "WhatsApp Clone",
+    p: "A mini e-commerce application.",
+    img: require("../../images/whatsapp-clone.png").default,
+    githubL: "//github.com/CaiaCC/whatsapp-clone",
+    externalL: "//whatsapp-clone-28532.web.app/",
+};

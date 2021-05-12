@@ -10,7 +10,8 @@ import {
     projectObjTwo,
     projectObjThree,
     projectObjFour,
-    projectObjFive
+    projectObjFive,
+    projectObjSix,
 } from "./ProjectsData";
 
 const Projects = () => {
@@ -19,6 +20,7 @@ const Projects = () => {
             <ProjectsContainer id="projects">
                 <ProjectsH1>Projects</ProjectsH1>
                 <ProjectsWrapper>
+                    <ProjectCard projectObj={projectObjSix} />
                     <ProjectCard projectObj={projectObjFive} />
                     <ProjectCard projectObj={projectObjOne} />
                     <ProjectCard projectObj={projectObjTwo} />
