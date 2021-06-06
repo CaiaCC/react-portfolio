@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export const ProjectsContainer = styled.div`
-    height: 860px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
