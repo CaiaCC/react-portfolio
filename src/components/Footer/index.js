@@ -29,7 +29,7 @@ const Footer = () => {
                             <Logo src={CaiaLogo} alt="logo" />
                         </FooterLogo>
                         <WebsiteRights>
-                            This site is built by Caia Chuang. {/*new Date().getFullYear()*/}
+                            {/* {new Date().getFullYear()} */}
                         </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink

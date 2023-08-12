@@ -40,7 +40,7 @@ export const projectObjSix = {
     p: "A mini e-commerce application.",
     img: require("../../images/whatsapp-clone.png").default,
     githubL: "//github.com/CaiaCC/whatsapp-clone",
-    externalL: "//whatsapp-clone-28532.web.app/",
+    externalL: "",
 };
 export const projectObjSeven = {
     name: "Amazon Clone",

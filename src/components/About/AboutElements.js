@@ -71,6 +71,18 @@ export const Paragraph = styled.p`
     line-height: 30px;
     color: ${({ darkText }) => (darkText ? "#040005" : "#fff")};
 `;
+export const ListWrap = styled.ul`
+    padding-left: 30px;
+    margin-bottom: 25px;
+`;
+
+export const List = styled.li`
+    max-width: 500px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 30px;
+    color: ${({ darkText }) => (darkText ? "#040005" : "#fff")};
+`;
 
 export const StackIcons = styled.div`
     display: flex;
